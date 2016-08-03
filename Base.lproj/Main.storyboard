@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baby" translatesAutoresizingMaskIntoConstraints="NO" id="48o-r4-y6u">
+                                <rect key="frame" x="0.0" y="68" width="375" height="599"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="5EQ-aW-RS7"/>
+                                    <constraint firstAttribute="height" constant="599" id="xoh-j8-4fA"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MB3-Uv-DlF">
+                                <rect key="frame" x="203" y="20" width="102" height="30"/>
+                                <state key="normal" title="不使用Pop动画"/>
+                                <connections>
+                                    <action selector="usePopBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fvt-Bp-nIx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oOM-jc-rkv">
+                                <rect key="frame" x="70" y="20" width="53" height="30"/>
+                                <state key="normal" title="Present"/>
+                                <connections>
+                                    <action selector="presentBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gKR-Ao-8gk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="48o-r4-y6u" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BVc-OR-cet"/>
+                            <constraint firstAttribute="trailing" secondItem="MB3-Uv-DlF" secondAttribute="trailing" constant="70" id="ELu-33-Sqy"/>
+                            <constraint firstItem="MB3-Uv-DlF" firstAttribute="top" secondItem="oOM-jc-rkv" secondAttribute="top" id="IqV-rS-ypq"/>
+                            <constraint firstItem="oOM-jc-rkv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="70" id="L3l-Fb-Hjg"/>
+                            <constraint firstItem="48o-r4-y6u" firstAttribute="top" secondItem="oOM-jc-rkv" secondAttribute="bottom" constant="18" id="TmJ-P0-Eac"/>
+                            <constraint firstItem="oOM-jc-rkv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="qxe-aN-DD6"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="277.5" y="378.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="baby" width="950" height="1425"/>
+    </resources>
+</document>
